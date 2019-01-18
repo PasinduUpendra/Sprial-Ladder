@@ -893,9 +893,9 @@ h2.user-name{
   ##Screen = B/w 481px to 767px
 */
 
-@media (min-width: 481px) and (max-width: 767px) {
-  
-  
+@media (min-width: 481px) and (max-width: 768px) {
+    .navbar-brand {max-width: 70%;}
+    .nav-logo {width: 78%;}  
 }
 
 /* 
@@ -914,6 +914,24 @@ h2.user-name{
     float: unset;
     max-width: 100%;
 	}
+    footer [class*="col-"] {
+    margin-bottom: 34px;
+    }
+    .lesson-content .lessons-col  {
+        margin-top: 1vh;
+    }
+}
+@media (max-width: 319px) {
+    .navbar-brand {max-width: 70%;}
+    .nav-logo {width: 78%;}
+    .row.align-middle {
+    display: grid;
+    align-items: center;
+    }
+    .timeline-body img {
+    float: unset;
+    max-width: 100%;
+    }
     footer [class*="col-"] {
     margin-bottom: 34px;
     }
