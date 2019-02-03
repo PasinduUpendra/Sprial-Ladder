@@ -33,7 +33,7 @@
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle x collapsed">
+            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="pull-left navbar-toggle x collapsed">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -144,30 +144,110 @@
     </li>
     <li class="clearfix no-float"></li>
     </ul>
+    <ul class="timeline mobile">
+    <li class="timeline-one">
+        <div class="timeline-badge">
+          <a><i></i></a>
+        </div>
+        <div class="timeline-panel">
+            <div class="timeline-body">
+                <img src="img/timeline_img_1.png"/>
+            </div>
+        </div>
+    </li>
+    
+    <li class="timeline-inverted timeline-two">
+        <div class="timeline-badge">
+            <a><i></i></a>
+        </div>
+        <div class="timeline-panel">
+            <div class="timeline-body col-xs-12 col-md-8">
+                <p>Make web pages and games to share with friends </p>
+            </div>
+        </div>
+    </li>
+    
+    <li class="timeline-inverted timeline-three">
+        <div class="timeline-badge">
+            <a><i></i></a>
+        </div>
+        <div class="timeline-panel">
+            <div class="timeline-body">
+                <div class="timeline-body">
+                <img src="img/timeline_img_2.png"/>
+            </div>
+            </div>
+        </div>
+    </li>
+
+    <li class="timeline-four">
+        <div class="timeline-badge">
+            <a><i></i></a>
+        </div>
+        <div class="timeline-panel">
+            <div class="timeline-body timeline-left col-xs-12 col-md-10">
+                <p>Reveal the mysteries of the code that runs the internet </p>
+            </div>
+        </div>
+    </li>
+    
+    
+    <li class="timeline-five">
+        <div class="timeline-badge">
+            <a><i></i></a>
+        </div>
+        <div class="timeline-panel">
+            <div class="timeline-body">
+                <div class="timeline-body">
+                <img src="img/timeline_img_3.png"/>
+            </div>
+            </div>
+        </div>
+    </li>
+    
+    <li class="timeline-inverted timeline-six">
+        <div class="timeline-badge">
+            <a><i></i></a>
+        </div>
+        <div class="timeline-panel">
+            <div class="timeline-body col-xs-12 col-md-8">
+                <p>Chat with tutors to get help </p>
+            </div>
+        </div>
+    </li>
+
+    <li class="clearfix no-float"></li>
+    </ul>
   </div>
   <div class="scroll-row"><a href="#" class="scroll-next"></a></div>
 </div>
 <div class="container-fluid testimonial sections full-screen">
-    <div class="row">
+    <div class="row mnmp">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
           <h1>Become a web hacker like these teens</h1>
         </div>
-        <div class="col-xs-12 col-sm-12 col-md-11 col-lg-11 col-md-offset-1 col-lg-offset-2">
-            <div class="row row-eq-height">
-                <div class="col-xs-12 col-sm-12 col-md-3 testimonial-col">
-                  <img src="img/testimonial_img_1.png" />
-                  <p class="quote">"Creating web games was easier than I thought."</p>
-                  <p class="auther">Liza Furgezan</p>
+        <div class="col-sm-12 col-md-11 col-lg-11 col-md-offset-1 col-lg-offset-2 mnmp">
+            <div class="row row-eq-height mnmp">
+                <div class="col-sm-12 col-md-3 testimonial-col mnmp">
+                    <div class="testimonial-content mnmp">
+                      <img src="img/testimonial_img_1.png" />
+                      <p class="quote">"Creating web games was easier than I thought."</p>
+                      <p class="auther">Liza Furgezan</p>
+                    </div>  
                 </div>
-                <div class="col-xs-12 col-sm-12 col-md-3 testimonial-col">
-                  <img src="img/testimonial_img_2.png" />
-                  <p class="quote">"The chat with the tutors is good because I can get help as soon as I get stuck."</p>
-                  <p class="auther">Mark Anderson</p>
+                <div class="col-sm-12 col-md-3 testimonial-col mnmp">
+                    <div class="testimonial-content mnmp">
+                      <img src="img/testimonial_img_2.png" />
+                      <p class="quote">"The chat with the tutors is good because I can get help as soon as I get stuck."</p>
+                      <p class="auther">Mark Anderson</p>
+                    </div>
                 </div>
-                <div class="col-xs-12 col-sm-12 col-md-3 testimonial-col">
-                  <img src="img/testimonial_img_3.png" />
-                  <p class="quote">"It’s like solving a puzzle. Coding is fun."</p>
-                  <p class="auther">Emily Cleara</p>
+                <div class="col-sm-12 col-md-3 testimonial-col mnmp">
+                    <div class="testimonial-content mnmp">
+                      <img src="img/testimonial_img_3.png" />
+                      <p class="quote">"It’s like solving a puzzle. Coding is fun."</p>
+                      <p class="auther">Emily Cleara</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -178,11 +258,13 @@
 <div class="container-fluid learn-section sections">
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
         <div class="learn-img">
-            <picture>
-              <source srcset="img/learn_img.webp" type="image/webp">
-              <source srcset="img/learn_img.png" type="image/png"> 
-              <img src="img/learn_img.png">
-            </picture>
+            <picture class="responsive-img">
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="img/learn_img.png" media="(min-width: 641px)">
+                <source srcset="learn_mobile_img.png" media="(min-width: 640px)">
+                <!--[if IE 9]></video><![endif]-->
+                <img src="#" srcset="img/learn_mobile_img.png" alt="Learn Powerful Skills">
+                </picture>
         </div>
         <div class="row">
             <div class="col-xs-12 col-sm-10 col-md-8 col-lg-8 col-md-offset-2 learn-txt">
