@@ -1,11 +1,14 @@
 /*!
  * Header
+
+* {
+    border: 1px solid red;
+}
  */
 
 header {
   padding: 154px 0 100px;
 }
-
 @media (min-width: 992px) {
   header {
     padding: 156px 0 100px;
@@ -13,6 +16,9 @@ header {
 }
 section {
   padding: 150px 0;
+}
+.no-m {
+    margin: 0 !important;
 }
 .navbar-toggle.navbar-left {
   float: left;
@@ -349,7 +355,9 @@ p {
 .learn-txt {
     text-align: center;
     z-index: 9;
+    margin: 0 auto;
     margin-bottom: -20%;
+    float: unset;
 }
 .learn-txt h1 {
     color: #ffaf01;
@@ -511,7 +519,7 @@ p {
         width: -webkit-calc(100% - 65px);
     }
     ul.timeline > li > .timeline-badge {
-        left: 28px;
+        left: 32px;
         margin-left: 0;
         top: 45%px;
     }
@@ -541,7 +549,7 @@ p {
         margin-bottom: 30px;
     }
     .timeline > li.timeline-inverted > .timeline-badge {
-        left: 28px;
+        left: 32px;
     }
  }
 
@@ -813,7 +821,7 @@ h2.user-name{
 .lesson-content {
     background: #fefefe;
     margin-bottom: 4.5vh;
-    margin-top: 10vh;
+    margin-top: 8vh;
 }
 .lesson-content .lessons-col {
     padding: 1rem;
@@ -827,7 +835,7 @@ h2.user-name{
 .lesson-quote {
     background: #eeeeee;
     padding: 2rem;
-    font-weight: 100;
+    font-weight: 300;
     border-radius: 10px;
 }
 .lesson-quote .highlight {
@@ -860,6 +868,9 @@ h2.user-name{
     margin-top: .8rem;
     border: 3px solid;
 }
+.lesson-content p {
+    color: #333;
+}
 .lesson-warnings {
     margin-top: 2rem;
     padding-right: 1rem;
@@ -882,7 +893,7 @@ h2.user-name{
 #code-input textarea {
     border-radius: 10px 10px 0 0 !important;
     border: 2px solid #e2e2e2;
-    margin-left: -2px;
+    margin-left: -0.5%;
     min-width: 101%;
     display: block;
 }
@@ -912,12 +923,38 @@ h2.user-name{
 .mobile li.timeline-inverted.timeline-six {
     margin-top: 0;
 }
+.testimonial-row {
+    max-width: 80%;
+    margin: 0 auto !important;
+    float: unset;
+}
+.lesson-content .col-sm-12.col-md-4.col-lg-4 {
+    padding-left: 5px;
+    padding-right: 5px;
+}
  /* 
   ##Device = Low Resolution Tablets, Mobiles (Landscape)
   ##Screen = B/w 481px to 767px
 */
+@media (max-width: 860px) {
+    .navbar-collapse.collapse {
+        display: none !important;
+    }
+    .navbar-collapse.collapse.in {
+        display: block !important;
+    }
+    .navbar-header .collapse, .navbar-toggle {
+        display:block !important;
+    }
+    .navbar-header {
+        float:none;
+    }
+    .nav-logo {
+        width: 78%;
+    }
+}
 
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 740px) {
     .navbar-brand {max-width: 70%;}
     .nav-logo {width: 78%;}  
     .timeline.mobile {
@@ -925,6 +962,21 @@ h2.user-name{
     }
     .timeline {
         display: none;
+    }
+    .navbar-brand>img {
+        margin: 0 auto;
+    }
+    .timeline-body img {
+        float: unset;
+    }
+    .timeline-section {
+        margin-top: -4vh;
+    }
+    .mobile .timeline-one {
+        margin-top: 4vh;
+    }
+    .learn-img {
+        margin-top: 4vh;
     }
 }
 
@@ -936,12 +988,23 @@ h2.user-name{
 @media (min-width: 320px) and (max-width: 480px) {
     .timeline.mobile {
         display: block;
+        margin-top: -3vh;
+        margin-bottom: -8vh;
+    }
+    .mobile li.timeline-five {
+        margin-top: 3.4vh;
+    }
+    .timeline > li.timeline-inverted {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .timeline > li {
+        min-height: 125px !important;
     }
     .timeline {
         display: none;
     }
     .navbar-brand>img {
-        display: -webkit-box;
         margin: 0 auto;
     }
 	.navbar-brand {max-width: 70%;}
@@ -960,14 +1023,8 @@ h2.user-name{
     .lesson-content .lessons-col  {
         margin-top: 1vh;
     }
-    .mnmp {
-        padding-left: 0 !important;
-        padding-right: 0 !important;
-        margin-left: 0 !important;
-        margin-right: 0 !important; 
-    }
     .testimonial {
-        padding: 0;
+        padding: 4vh 0;
     }
     .navbar-nav {
         margin: 7.5px -15px 0 -15px;
@@ -981,8 +1038,33 @@ h2.user-name{
     .full-screen {
         min-height: calc(100vh - 50px);
     }
+    .learn-img {
+        margin-top: 4vh;
+    }
+    .timeline-body > p {
+        margin-left: 16%;
+        margin-right: 0%;
+        font-size: 1.5em;
+    }
+    .testimonial-col .quote {
+        padding: 10px 24px;
+    }
+    .testimonial-col .auther {
+        margin-bottom: 5vh;
+    }
 }
 @media (max-width: 319px) {
+    .timeline-body > p {
+        margin-left: 16%;
+        margin-right: 0%;
+        font-size: 1.5em;
+    }
+    .testimonial {
+        padding: 4vh 0;
+    }
+    .learn-img {
+        margin-top: 4vh;
+    }
     .timeline.mobile {
         display: block;
     }
@@ -1019,5 +1101,11 @@ h2.user-name{
     }
     .full-screen {
         min-height: calc(100vh - 50px);
+    }
+    .testimonial-col .quote {
+        padding: 10px 24px;
+    }
+    .testimonial-col .auther {
+        margin-bottom: 5vh;
     }
 }
