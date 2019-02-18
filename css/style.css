@@ -3,8 +3,8 @@
 
 * {
     border: 1px solid red;
-}
- */
+}*/
+
 
 header {
   padding: 154px 0 100px;
@@ -174,14 +174,16 @@ p {
     height: 50px;
     margin: 0 auto;
     display: block;
-    position: relative;
-    bottom: 0px;
+    position: absolute;
+    bottom: -2%;
     border-radius: 50px;
     -webkit-box-shadow: 0px 2px 1px 1px rgba(0,0,0,.1);
     box-shadow: 0px 2px 1px 1px rgba(0,0,0,.1);
     cursor: pointer;
     z-index: 99;
+    left: calc(50% - 25px);
 }
+
 .scroll-next:hover {
     animation: bounce 500ms infinite alternate;
     -webkit-animation: bounce 500ms infinite alternate;
@@ -795,6 +797,7 @@ h2.user-name{
 }
 .panel-title a {
     padding-left: 25px;
+    display: block;
 }
 .panel-title a:before {
     position: absolute;
