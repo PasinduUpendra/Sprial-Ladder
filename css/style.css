@@ -127,6 +127,7 @@ p {
 	background-size: cover;
     background-repeat: no-repeat;
     background-position: center top;
+    max-height: 95vh;
 }
 .align-middle {
     display: flex;
