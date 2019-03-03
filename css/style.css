@@ -941,6 +941,9 @@ h2.user-name{
     padding-left: 5px;
     padding-right: 5px;
 }
+.nav-logo {
+    margin-top: -1%;
+}
  /* 
   ##Device = Low Resolution Tablets, Mobiles (Landscape)
   ##Screen = B/w 481px to 767px
@@ -971,6 +974,9 @@ h2.user-name{
     .outter-accordian {
         max-width: 60%;
         margin: 0 auto;
+    }
+    .nav-logo {
+        margin-top: 0;
     }
 }
 /* 
@@ -1025,6 +1031,9 @@ h2.user-name{
     .outter-accordian {
         margin: 0 auto;
         max-width: 80% !important;
+    }
+    .nav-logo {
+        margin-top: -1% !important;
     }
 }
 
@@ -1106,6 +1115,9 @@ h2.user-name{
     .outter-accordian {
         margin: 0 auto;
         max-width: 100%;
+    }
+    .nav-logo {
+        margin-top: -1% !important;
     }
 }
 @media (max-width: 319px) {
